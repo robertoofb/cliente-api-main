@@ -42,6 +42,8 @@ function NuevoAlumno(){
         e.preventDefault();
         ClienteAxios.post('/alumnos', alumno)
         .then(res =>{
+            alert("Alumno Guardado");
+            window.location.reload();
             console.log(res);
         });
     }
